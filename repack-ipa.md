@@ -12,6 +12,7 @@ rm -rf Payload/YourApp.app/_CodeSignature
 cp InHouse.mobileprovision Payload/YourApp.app/embedded.mobileprovision
 * 步骤4:  
 /usr/bin/codesign -f -s "iPhone Distribution: YourCompanyName" --resource-rules Payload/YourApp.app/ResourceRules.plist Payload/YourApp.app
+_在10.10中，会提示--resource-rules废弃了，删掉这个选项即可_
 * 步骤5: 
 zip -r YourApp_inhouse.ipa Payload
 
