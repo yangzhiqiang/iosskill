@@ -1,7 +1,7 @@
 ### 通过方法名称调用方法
 
 ```
-            SEL sel = NSSelectorFromString(checkMethod);
+            SEL sel = NSSelectorFromString(@"checkMethod:");
             NSMethodSignature * signiture = [self methodSignatureForSelector:sel];
             
             const char * sig = [signiture getArgumentTypeAtIndex:0];
